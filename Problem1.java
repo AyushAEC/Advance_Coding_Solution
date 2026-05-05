@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Problem1 {
-    public static int solve(String S) {
+    public static int maxSum(String S) {
         int n = S.length();
         if (n == 0) return 0;
         String T = S + S;
@@ -31,7 +31,7 @@ public class Problem1 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter string: ");
         String S = sc.nextLine().trim();
-        System.out.println("Max Cyclic Substring Sum = " + solve(S));
+        System.out.println("Max Cyclic Substring Sum = " + maxSum(S));
         
         sc.close();
     }
